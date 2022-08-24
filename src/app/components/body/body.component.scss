@@ -1,0 +1,13 @@
+:host {
+    .collections-container,
+    .clo-3d {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+
+        * {
+            flex: 1;
+            margin: 1.25rem;
+        }
+    }
+}

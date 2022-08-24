@@ -1,0 +1,15 @@
+@import "./variables.scss";
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap");
+
+* {
+    font-family: $font-family !important;
+    color: $text-color;
+}
+
+body {
+    background-color: $background-color;
+}
+
+.flex-filler {
+    flex: 1;
+}

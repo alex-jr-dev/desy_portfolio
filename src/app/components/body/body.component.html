@@ -1,0 +1,8 @@
+<div class="collections-container">
+    <ng-container *ngFor="let collection of collections">
+        <app-card [text]="collection.text" [cover]="collection.cover"></app-card>
+    </ng-container>
+</div>
+<div class="clo-3d">
+    <app-card isClo="true" [text]="clo_3d.text" [cover]="clo_3d.cover"></app-card>
+</div>

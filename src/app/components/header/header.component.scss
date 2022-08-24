@@ -1,0 +1,9 @@
+:host {
+    display: flex;
+    justify-content: center;
+
+    .title {
+        margin: 1.25rem;
+        font-size: 32px;
+    }
+}
