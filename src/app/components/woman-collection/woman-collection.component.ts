@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
-import { WOMAN_COLLECTION } from 'src/app/constants';
+import { Router } from '@angular/router';
+import { WOMAN_COLLECTION, WOMAN_FIRST_PAGE } from 'src/app/constants';
 
 @Component({
   selector: 'app-woman-collection',
@@ -8,11 +9,14 @@ import { WOMAN_COLLECTION } from 'src/app/constants';
 })
 export class WomanCollectionComponent implements OnInit {
   womanCollection: any = WOMAN_COLLECTION;
-  firstPage: any;
+  womanFirstPage: any = WOMAN_FIRST_PAGE;
 
-  constructor() { }
+  constructor(private _router: Router) { }
 
   ngOnInit(): void {
-    this.firstPage = this.womanCollection.shift();
+  }
+
+  goToHomepage() {
+    this._router.navigateByUrl("");
   }
 }

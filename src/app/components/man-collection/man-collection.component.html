@@ -3,16 +3,16 @@
         <button mat-raised-button (click)="goToHomepage()">Back</button>
     </div>
     <div class="header">
-        <h1>Woman collection</h1>
+        <h1>Man collection</h1>
     </div>
 </div>
 <div class="images">
     <div class="first-page">
-        <img [src]="womanFirstPage.image">
-        <p>{{womanFirstPage.label}}</p>
+        <img [src]="manFirstPage.image">
+        <p>{{manFirstPage.label}}</p>
     </div>
     <div class="pages">
-        <ng-container *ngFor="let page of womanCollection">
+        <ng-container *ngFor="let page of manCollection">
             <div>
                 <img [src]="page.image">
                 <p>{{page.label}}</p>
