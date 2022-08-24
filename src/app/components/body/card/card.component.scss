@@ -1,23 +1,30 @@
 $hover_color: #d0034c;
 
 :host {
-    display: flex;
-    align-items: center;
-    flex-direction: column;
+    .container {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
 
-    .image:hover,
-    .clo-image:hover {
-        cursor: pointer;
+        &:hover {
+            cursor: pointer;
 
-        .text {
-            color: $hover_color;
-            transition: color 0.3s ease;
-        }
+            .text {
+                color: $hover_color;
+                transition: color 0.3s ease;
+            }
 
-        .bar,
-        .clo-bar {
-            background-color: $hover_color;
-            transition: background-color 0.3s ease;
+            .image,
+            .clo-image {
+                transition: box-shadow 0.3s ease;
+                box-shadow: 0 0 18px $hover_color;
+            }
+
+            .bar,
+            .clo-bar {
+                background-color: $hover_color;
+                transition: background-color 0.3s ease;
+            }
         }
     }
 
@@ -40,14 +47,14 @@ $hover_color: #d0034c;
 
     .image {
         aspect-ratio: 1 / 1;
-        width: 250px;
-        height: 250px;
+        width: 350px;
+        height: 350px;
     }
 
     .clo-image {
         aspect-ratio: 16 / 9;
-        width: 40%;
-        height: 280px;
+        width: 50%;
+        height: 350px;
     }
 
     .clo-bar {

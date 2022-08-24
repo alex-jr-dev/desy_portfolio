@@ -1,9 +1,11 @@
-<h3 class="text">{{text}}</h3>
-<ng-container *ngIf="isClo; else noClo">
-    <div class="clo-bar"></div>
-    <img *ngIf="isClo" class="clo-image" [src]="cover">
-</ng-container>
-<ng-template #noClo>
-    <div class="bar"></div>
-    <img class="image" [src]="cover">
-</ng-template>
+<div class="container" (click)="onSelect()">
+    <h3 class="text">{{text}}</h3>
+    <ng-container *ngIf="isClo; else noClo">
+        <div class="clo-bar"></div>
+        <img *ngIf="isClo" class="clo-image" [src]="cover">
+    </ng-container>
+    <ng-template #noClo>
+        <div class="bar"></div>
+        <img class="image" [src]="cover">
+    </ng-template>
+</div>
