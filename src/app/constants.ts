@@ -11,9 +11,16 @@ export const COLLECTIONS = [
 
     },
 ];
+
 export const CLO_3D = {
     text: "Clo 3D",
     cover: "assets/images/clo3d/CLO_3D_BOOK_cover.jpg",
     link: "/clo3d"
-
 }
+
+export const WOMAN_COLLECTION = [
+    {
+        label: "Page 1",
+        image: ""
+    }
+]

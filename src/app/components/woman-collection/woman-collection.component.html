@@ -1,1 +1,9 @@
-<p>woman-collection works!</p>
+<div class="header">
+    <h1>Woman Collection</h1>
+</div>
+<div class="images">
+    <ng-container *ngFor="let page of womanCollection">
+        <img [src]="page.image">
+        <p>{{page.label}}</p>
+    </ng-container>
+</div>
