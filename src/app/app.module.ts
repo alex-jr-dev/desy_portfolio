@@ -8,6 +8,7 @@ import { FullPageComponent } from './components/full-page/full-page.component';
 import { HeaderComponent } from './components/header/header.component';
 import { BodyComponent } from './components/body/body.component';
 import { CardComponent } from './components/body/card/card.component';
+import { WomanCollectionComponent } from './components/woman-collection/woman-collection.component';
 
 @NgModule({
   declarations: [
@@ -15,7 +16,8 @@ import { CardComponent } from './components/body/card/card.component';
     FullPageComponent,
     HeaderComponent,
     BodyComponent,
-    CardComponent
+    CardComponent,
+    WomanCollectionComponent
   ],
   imports: [
     BrowserModule,
