@@ -2,8 +2,16 @@
     <h1>Woman Collection</h1>
 </div>
 <div class="images">
-    <ng-container *ngFor="let page of womanCollection">
-        <img [src]="page.image">
-        <p>{{page.label}}</p>
-    </ng-container>
+    <div class="first-page">
+        <img [src]="firstPage.image">
+        <p>{{firstPage.label}}</p>
+    </div>
+    <div class="pages">
+        <ng-container *ngFor="let page of womanCollection">
+            <div>
+                <img [src]="page.image">
+                <p>{{page.label}}</p>
+            </div>
+        </ng-container>
+    </div>
 </div>

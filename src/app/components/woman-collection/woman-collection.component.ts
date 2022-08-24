@@ -1,5 +1,4 @@
 import { Component, OnInit } from '@angular/core';
-import { DomSanitizer } from '@angular/platform-browser';
 import { WOMAN_COLLECTION } from 'src/app/constants';
 
 @Component({
@@ -9,17 +8,11 @@ import { WOMAN_COLLECTION } from 'src/app/constants';
 })
 export class WomanCollectionComponent implements OnInit {
   womanCollection: any = WOMAN_COLLECTION;
+  firstPage: any;
 
-  constructor(private _sanitazier: DomSanitizer) { }
+  constructor() { }
 
   ngOnInit(): void {
-    // this.womanCollection = this.womanCollection.map(page => {
-    //   let image = this._sanitazier.bypassSecurityTrustResourceUrl(page.image);
-
-    //   return {
-    //     label: page.label,
-    //     image: image,
-    //   }
-    // });
+    this.firstPage = this.womanCollection.shift();
   }
 }
